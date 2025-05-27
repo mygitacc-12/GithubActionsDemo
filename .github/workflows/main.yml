@@ -1,0 +1,9 @@
+on:
+  schedule:
+    - cron: '49 7 * * *'  # Runs daily at 13:19 IST (07:49 UTC)
+
+jobs:
+  run_job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Running workflow at 13:19 IST"
